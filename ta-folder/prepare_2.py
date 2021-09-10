@@ -9,6 +9,23 @@ import seaborn as sns
 from datetime import datetime
 import os
 
+
+############### Initial Child Functions #################
+
+def drop_unnamed(df):
+    '''
+    This function takes in a pandas DataFrame, and drops the 'Unnamed: 0' column, and
+    then returns the updated pandas DataFrame.
+    '''
+    df = df[df.columns[1:]]
+    return df
+
+
+
+
+
+
+
 ################ Mother Functions ########################
 
 def prep_the_strings(df):
